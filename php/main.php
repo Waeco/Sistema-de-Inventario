@@ -82,7 +82,7 @@ function paginador_tablas($pagina,$Npaginas,$url,$botones){
             }
             $ci++;
         }
-    }
+    
     if($pagina==$Npaginas){
         $tabla.='
         </ul>
