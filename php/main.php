@@ -41,4 +41,15 @@ function limpiar_cadena($cadena){
     $cadena = stripslashes($cadena);
     return $cadena;
 }
+function renombrar_fotos($nombre){
+    $nombre =str_ireplace(" ","_",$nombre);
+    $nombre =str_ireplace("/","_",$nombre);
+    $nombre =str_ireplace("#","_",$nombre);
+    $nombre =str_ireplace("-","_",$nombre);
+    $nombre =str_ireplace("$","_",$nombre);
+    $nombre =str_ireplace(".","_",$nombre);
+    $nombre =str_ireplace(",","_",$nombre);
+    $nombre = $nombre."_".rand(0,100);
+    return $nombre;
+}
 ?>
